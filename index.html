@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="js/tmpl.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="" class="search">
+      <input type="text" name="searchField" value="" id="searchField">
+      <input type="button" name="seachButtom" value="Search" class="searchButtom">
+    </form>
+    <div class="searchResult">
+
+    </div>
+    <script type="text/tmpl" id="tmpl">
+      <% if (hits.length == 0) {%>
+        Ничего не найдено
+      <% } else { %>
+        <% for ( var i = 0; i < hits.length; i++ ) { %>
+          <div>
+            <a href="<%= hits[i].pageURL %>" target = "blank"><%= hits[i].pageURL %>></a>
+          </div>
+        <% } %>
+      <% } %>
+    </script>
+  </div>
+</body>
+</html>
