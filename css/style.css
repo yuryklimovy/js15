@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 600px;
+  margin: 50px auto;
+}
+#searchField {
+  width: 500px;
+  margin: 0 auto;
+}
+.searchResult {
+  overflow: hidden;
+}
+.searchResult div {
+  margin-bottom: 5px;
+}
+.searchResult span {
+  font-weight: bold;
+}
+.links img {
+  margin-right: 5px;
+}
